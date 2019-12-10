@@ -1,4 +1,4 @@
-class Imagemagick < Formula
+class ImagemagickSvg < Formula
   desc "Tools and libraries to manipulate images in many formats"
   homepage "https://www.imagemagick.org/"
   url "https://dl.bintray.com/homebrew/mirror/ImageMagick-7.0.9-8.tar.xz"
@@ -18,6 +18,7 @@ class Imagemagick < Formula
   depends_on "libheif"
   depends_on "libomp"
   depends_on "libpng"
+  depends_on "librsvg"
   depends_on "libtiff"
   depends_on "libtool"
   depends_on "little-cms2"
@@ -43,6 +44,7 @@ class Imagemagick < Formula
       --with-modules
       --with-openjp2
       --with-openexr
+      --with-rsvg
       --with-webp=yes
       --with-heic=yes
       --without-gslib
